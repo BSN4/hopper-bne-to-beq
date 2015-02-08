@@ -10,6 +10,4 @@ doc = Document.getCurrentDocument()
 seg = doc.getCurrentSegment()
 adr = doc.getCurrentAddress()
 b = seg.readByte(adr + 1)
-print(b)
-
 writeByteAndPreserveProc(seg, adr, adr + 1, b ^ 1)
